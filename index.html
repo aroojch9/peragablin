@@ -118,6 +118,41 @@
     a:hover {
       text-decoration: underline;
     }
+    /* Mobile responsiveness tweaks */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .block {
+    padding: 15px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  .brand-img {
+    max-width: 60px;
+  }
+
+  th, td {
+    padding: 8px;
+  }
+
+  img.formula-img {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+/* Ensure all tables scroll horizontally if overflowed */
+table {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
   </style>
 </head>
 <body>
@@ -130,7 +165,7 @@
   </header>
   <main>
 
-  <main>
+ 
 
 
     <div class="block">
@@ -270,6 +305,7 @@
     </div>
 
     <div class="block">
+      <div style="overflow-x: auto;">
       <h2>🏷️ Brands Available in Pakistan</h2>
       <table>
         <tr><th>Brand</th><th>Strength</th><th>Dosage Form</th><th>Manufacturer</th><th>Logo</th></tr>
@@ -296,7 +332,7 @@
         </tr>
       </table>
     </div>
-
+</div>
     <div class="block">
       <h2>📚 References</h2>
       <ul>
